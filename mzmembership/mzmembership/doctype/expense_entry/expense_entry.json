@@ -1,0 +1,281 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-03-01 10:54:16.552941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "naming_series",
+  "party_type",
+  "party",
+  "party_name",
+  "due_date",
+  "column_break_7",
+  "organisation",
+  "date",
+  "posting_time",
+  "edit_posting_date_and_time",
+  "set_posting_time",
+  "data_13",
+  "apply_tax_withholding_amount",
+  "accounting_dimensions_column",
+  "project",
+  "amended_from",
+  "member_invoice_details_section",
+  "party_invoice_no",
+  "column_break_20",
+  "party_invoice_date",
+  "section_break_21",
+  "expense_head",
+  "items",
+  "section_break_25",
+  "total_quantity",
+  "column_break_27",
+  "total",
+  "net_total",
+  "section_break_24",
+  "discount",
+  "data_34",
+  "grand_total",
+  "more_information_section",
+  "credit_to",
+  "column_break_40",
+  "status"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType"
+  },
+  {
+   "fetch_from": "party.full_name",
+   "fieldname": "party_name",
+   "fieldtype": "Read Only",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "organisation",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time",
+   "no_copy": 1,
+   "print_width": "100px",
+   "width": "100px"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.docstatus==0",
+   "fieldname": "edit_posting_date_and_time",
+   "fieldtype": "Check",
+   "label": "Edit Posting Date and Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "set_posting_time",
+   "fieldtype": "Check",
+   "label": "Is Paid"
+  },
+  {
+   "fieldname": "data_13",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Is Return (Debit Note)"
+  },
+  {
+   "fieldname": "apply_tax_withholding_amount",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Apply Tax Withholding Amount"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "accounting_dimensions_column",
+   "fieldtype": "Section Break",
+   "label": "Accounting Dimensions "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "member_invoice_details_section",
+   "fieldtype": "Section Break",
+   "label": "Member Invoice Details"
+  },
+  {
+   "fieldname": "party_invoice_no",
+   "fieldtype": "Link",
+   "label": "Party Invoice No",
+   "options": "Invoice"
+  },
+  {
+   "fieldname": "party_invoice_date",
+   "fieldtype": "Date",
+   "label": "Party Invoice Date"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expense_head",
+   "fieldtype": "Link",
+   "label": "Expense Head",
+   "options": "Account"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Expense Entry Item"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Data",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Data",
+   "label": "Net Total"
+  },
+  {
+   "fieldname": "data_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Data",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "credit_to",
+   "fieldtype": "Link",
+   "label": "Credit To",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nReturn\nDebit Note Issued\nSubmitted\nPaid\nUnpaid\nOverdue\nCancelled\nInternal Transfer"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "EXP-.YYYY.-"
+  },
+  {
+   "default": "0",
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Additional Discount Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-01 15:33:18.986024",
+ "modified_by": "Administrator",
+ "module": "Mzmembership",
+ "name": "Expense Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
