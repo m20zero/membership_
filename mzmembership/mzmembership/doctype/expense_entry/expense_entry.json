@@ -18,7 +18,7 @@
   "date",
   "posting_time",
   "edit_posting_date_and_time",
-  "set_posting_time",
+  "is_paid",
   "data_13",
   "apply_tax_withholding_amount",
   "accounting_dimensions_column",
@@ -107,12 +107,6 @@
    "fieldname": "edit_posting_date_and_time",
    "fieldtype": "Check",
    "label": "Edit Posting Date and Time"
-  },
-  {
-   "default": "0",
-   "fieldname": "set_posting_time",
-   "fieldtype": "Check",
-   "label": "Is Paid"
   },
   {
    "fieldname": "data_13",
@@ -252,12 +246,18 @@
    "fieldname": "discount",
    "fieldtype": "Data",
    "label": "Additional Discount Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_paid",
+   "fieldtype": "Check",
+   "label": "Is Paid"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-01 15:33:18.986024",
+ "modified": "2022-03-12 09:12:23.188901",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Expense Entry",

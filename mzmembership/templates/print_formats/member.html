@@ -1,0 +1,51 @@
+<div >
+    <table style="border-style: groove;" class="table">
+        <thead>
+            <tr>
+                <th style="font-size:30px;text-align:center;">MEMBER FORM</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div>
+    <table class="table" style="border-style: ridge;">
+        <tbody>
+            <tr>
+                <td  colspan="2"><b>Full Name:</b></td>
+                <td  colspan="2">{{doc.full_name}}</td>
+            </tr>
+            <tr>
+                <td  colspan="2"><b>Email:</b></td>
+                <td  colspan="2">{{doc.email}}</td>
+            </tr>
+            <tr>
+                <td  colspan="2"><b>Mobile No:</b></td>
+                <td  colspan="2">{{doc.mobile_no}}</td>
+            </tr>
+            <tr>
+                <td><b>DOB:</b></td>
+                <td>{{doc.date_of_birth}}</td>
+                <td><b>Gender:</b></td>
+                <td>{{doc.gender}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <table class="table" style="border-style: ridge;">
+        <tbody>
+            <tr>
+                <td  ><b>Membership Type:</b></td>
+                <td>{{doc.membership_type}}</td>
+            </tr>
+            <tr>
+                <td><b>Membership Since:</b></td>
+                <td>{{doc.member_since}}</td>
+            </tr>
+            <tr>
+                <td><b>Membership Expiry Date:</b></td>
+                <td>{{doc.membership_expiry_date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

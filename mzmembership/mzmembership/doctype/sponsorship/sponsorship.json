@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:sponsor_name",
+ "autoname": "SPN.####",
  "creation": "2022-03-03 14:27:53.665174",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -19,7 +19,8 @@
   "section_break_10",
   "mode_of_payment",
   "column_break_12",
-  "amount"
+  "amount",
+  "amended_from"
  ],
  "fields": [
   {
@@ -86,11 +87,21 @@
   {
    "fieldname": "column_break_12",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sponsorship",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-03-03 14:32:12.336908",
+ "modified": "2022-03-12 15:00:44.280459",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Sponsorship",
