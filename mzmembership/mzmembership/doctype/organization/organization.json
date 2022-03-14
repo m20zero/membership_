@@ -9,12 +9,10 @@
  "field_order": [
   "organization_name",
   "default_currency",
-  "zippostal_code",
   "email",
   "column_break_5",
   "street",
   "city",
-  "state",
   "country"
  ],
  "fields": [
@@ -29,11 +27,6 @@
    "fieldtype": "Link",
    "label": "Default Currency",
    "options": "Currency"
-  },
-  {
-   "fieldname": "zippostal_code",
-   "fieldtype": "Data",
-   "label": "Zip/Postal code"
   },
   {
    "fieldname": "email",
@@ -55,11 +48,6 @@
    "label": "City "
   },
   {
-   "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "State"
-  },
-  {
    "fieldname": "country",
    "fieldtype": "Data",
    "label": "Country"
@@ -67,7 +55,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-07 09:38:01.950407",
+ "modified": "2022-03-14 15:32:44.012118",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Organization",

@@ -34,3 +34,4 @@ frappe.ui.form.on("Expense Entry Item", "rate",function(frm,cdt,cdn)
 		frm.refresh_field("grand_total");
 	}
 });
+

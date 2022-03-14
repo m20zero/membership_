@@ -15,7 +15,7 @@
  ],
  "fields": [
   {
-   "fetch_from": "invoice.date",
+   "fetch_from": "expense.date",
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -23,27 +23,26 @@
   },
   {
    "default": "0",
-   "fetch_from": "invoice.total",
+   "fetch_from": "expense.total",
    "fieldname": "total",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Total"
+   "label": "Total",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
    "fieldname": "outstanding",
-   "fieldtype": "Currency",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Outstanding"
   },
   {
-   "default": "0",
    "fieldname": "allocated",
-   "fieldtype": "Currency",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Allocated"
   },
@@ -58,7 +57,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-03-03 09:43:23.296959",
+ "modified": "2022-03-14 08:14:11.933897",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Payment Item",

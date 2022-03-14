@@ -47,6 +47,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "member.member_since",
    "fieldname": "valid_from",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -54,6 +55,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "member.membership_expiry_date",
    "fieldname": "valid_to",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -101,7 +103,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-12-13 09:37:50.791328",
+ "modified": "2022-03-13 09:58:26.332308",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Membership",
