@@ -35,3 +35,22 @@ frappe.ui.form.on("Expense Entry Item", "rate",function(frm,cdt,cdn)
 	}
 });
 
+
+frappe.ui.form.on("Expense Entry",{
+	expense_head: function(frm){
+	if(frm.doc.expense_head){
+			if(frm.doc.items && !cur_frm.doc.items[0].expense_head){
+					frappe.model.set_value(cur_frm.doc.items[0].doctype, cur_frm.doc.items[0].name, "expense_head", frm.doc.expense_head);
+			}
+	}
+}
+});
+frappe.ui.form.on("Expense Entry Item",{
+items_add: function(frm, cdt, cdn){
+	if(frm.doc.expense_head){
+			var child = frappe.get_doc(cdt, cdn);
+			frappe.model.set_value(child.doctype, child.name, "expense_head", frm.doc.expense_head);
+	}
+},
+});
+

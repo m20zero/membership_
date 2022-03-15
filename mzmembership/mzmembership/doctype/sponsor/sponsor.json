@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "SPN.####",
- "creation": "2022-03-03 14:27:53.665174",
+ "autoname": "naming_series:",
+ "creation": "2022-03-15 08:36:22.760115",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sponsor_name",
+  "naming_series",
+  "full_name",
   "name_of_contact_person",
   "email",
   "mobile",
@@ -16,16 +17,9 @@
   "towncity",
   "state",
   "country",
-  "ammended_from",
   "amended_from"
  ],
  "fields": [
-  {
-   "fieldname": "sponsor_name",
-   "fieldtype": "Data",
-   "label": "Sponsor Name",
-   "unique": 1
-  },
   {
    "fieldname": "name_of_contact_person",
    "fieldtype": "Data",
@@ -66,10 +60,12 @@
    "label": "Country"
   },
   {
-   "fieldname": "ammended_from",
+   "fieldname": "amended_from",
    "fieldtype": "Link",
-   "label": "Ammended From",
-   "options": "Sponsorship",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sponsor",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -77,18 +73,31 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Sponsorship",
+   "options": "Sponsor",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming series",
+   "options": "SP-.YY.-"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-14 15:03:11.974064",
+ "modified": "2022-03-15 08:46:45.476726",
  "modified_by": "Administrator",
  "module": "Mzmembership",
- "name": "Sponsorship",
+ "name": "Sponsor",
  "owner": "Administrator",
  "permissions": [
   {

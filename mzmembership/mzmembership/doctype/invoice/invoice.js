@@ -1,18 +1,18 @@
 // Copyright (c) 2021, M20Zero and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Invoice', {
-	// refresh: function(frm) {
+// frappe.ui.form.on('Invoice', {
+// 	// refresh: function(frm) {
 
-	// }
-	setup: function(frm){
-		frm.set_query("party_type", function(){
-			return{
-				query: "mzmembership.whitelisted.get_party"
-			}
-		});
-	}
-});
+// 	// }
+// 	setup: function(frm){
+// 		frm.set_query("party_type", function(){
+// 			return{
+// 				query: "mzmembership.whitelisted.get_party"
+// 			}
+// 		});
+// 	}
+// });
 
 frappe.ui.form.on("Invoice Item", {
 	qty: function(frm, cdt, cdn){

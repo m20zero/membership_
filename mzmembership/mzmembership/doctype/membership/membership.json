@@ -40,7 +40,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "New\nPending\nCancelled\nExpired"
+   "options": "New\nPending\nCancelled\nExpired\nActive\nRenewed"
   },
   {
    "fieldname": "column_break_4",
@@ -103,7 +103,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-13 09:58:26.332308",
+ "modified": "2022-03-14 17:04:02.953226",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Membership",

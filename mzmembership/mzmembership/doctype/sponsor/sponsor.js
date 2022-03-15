@@ -1,7 +1,6 @@
 // Copyright (c) 2022, M20Zero and contributors
 // For license information, please see license.txt
-
-frappe.ui.form.on("Sponsorship", {
+frappe.ui.form.on("Sponsor", {
 	refresh: function(frm) {
 		if(cur_frm.doc.docstatus == 1){
 			frm.add_custom_button(__("Make Invoice"), function(){
@@ -11,7 +10,7 @@ frappe.ui.form.on("Sponsorship", {
 					let doc = frappe.model.get_new_doc("Invoice");
 					doc.date = frappe.datetime.now_date();
 					doc.naming_series = "INV-.YY.-";
-					doc.party_type = "Sponsorship";
+					doc.party_type = "Sponsor";
 					doc.party = cur_frm.doc.name;
 					doc.party_name = cur_frm.doc.sponsor_name;
 					let child = frappe.model.get_new_doc("Invoice Item", doc, "items");

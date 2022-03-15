@@ -17,15 +17,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Organisation",
-   "link_to": "Organization",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Member",
    "link_to": "Member",
    "link_type": "DocType",
@@ -53,15 +44,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Sponsorship",
-   "link_to": "Sponsorship",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Accounts",
    "link_type": "DocType",
    "onboard": 0,
@@ -70,8 +52,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Invoice",
-   "link_to": "Invoice",
+   "label": "Sponsor",
+   "link_to": "Sponsor",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -79,8 +61,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Expense Entry",
-   "link_to": "Expense Entry",
+   "label": "Invoice",
+   "link_to": "Invoice",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -97,32 +79,23 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Expense Entry",
+   "link_to": "Expense Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Payment Voucher",
    "link_to": "Payment Voucher",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Chart Of Accounts",
-   "link_to": "Account",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "General Ledger",
-   "link_to": "Ledger",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2022-03-14 15:01:56.041796",
+ "modified": "2022-03-15 11:21:00.100407",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Membership Portal",
@@ -134,6 +107,24 @@
    "doc_view": "List",
    "label": "Member",
    "link_to": "Member",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Organization",
+   "link_to": "Organization",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "General Ledger",
+   "link_to": "Ledger",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Tree",
+   "label": "Chart Of Accounts",
+   "link_to": "Account",
    "type": "DocType"
   }
  ]

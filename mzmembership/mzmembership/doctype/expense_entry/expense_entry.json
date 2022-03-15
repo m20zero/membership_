@@ -137,13 +137,12 @@
    "collapsible": 1,
    "fieldname": "member_invoice_details_section",
    "fieldtype": "Section Break",
-   "label": "Member Invoice Details"
+   "label": "Invoice Details"
   },
   {
    "fieldname": "party_invoice_no",
-   "fieldtype": "Link",
-   "label": "Party Invoice No",
-   "options": "Invoice"
+   "fieldtype": "Data",
+   "label": "Party Invoice No"
   },
   {
    "fieldname": "party_invoice_date",
@@ -249,7 +248,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-13 15:33:34.809458",
+ "modified": "2022-03-14 17:06:01.503702",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Expense Entry",
